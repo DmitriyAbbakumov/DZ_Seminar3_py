@@ -4,13 +4,23 @@
 # - 3 -> 11
 # - 2 -> 10
 
-n = int(input("Введите число: "))
-binary_number = list()
-while n>=1:
-    ost=n%2
-    n=int(n/2)
-    binary_number.append(ost)
-for i in range(int(len(binary_number)/2)):
-    binary_number[i], binary_number[-i-1] = binary_number[-i-1], binary_number[i]
-print(*binary_number, sep="")
+# n = int(input("Введите число: "))
+# binary_number = list()
+# while n>=1:
+#     ost=n%2
+#     n=int(n/2)
+#     binary_number.append(ost)
+# for i in range(int(len(binary_number)/2)):
+#     binary_number[i], binary_number[-i-1] = binary_number[-i-1], binary_number[i]
+# print(*binary_number, sep="")
+
+
+
+a = int(input('введите число для перевода = '))
+b = ''
+while a != 0:
+    b = str(a % 2) + b
+    a = a // 2
+print(b)
+
 

@@ -3,7 +3,11 @@
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
 list_numbers = [2, 3, 5, 9, 3, 6]
-sum=0
+sum = 0
 for i in range (0, len(list_numbers)):
-    if i%2!=0: sum +=list_numbers[i]
+    if i % 2 != 0: sum += list_numbers[i]
 print(sum)
+
+
+# my_list = [8, 5, 7, 3, 6]
+# print(sum(my_list[1::2]))
